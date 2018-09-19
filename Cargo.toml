@@ -1,0 +1,22 @@
+[package]
+authors = ["Zeyla Hellyer <hi@zeyla.me>"]
+edition = "2018"
+name = "distributed-worker-sample"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+byteorder = "1"
+serde_json = "1"
+tokio = "0.1"
+
+[dependencies.futures-preview]
+features = ["compat", "tokio-compat"]
+version = "0.3.0-alpha.6"
+
+[dependencies.redis-async]
+git = "https://github.com/zeyla/redis-async-rs"
+
+[dependencies.serenity]
+branch = "futures"
+git = "https://github.com/serenity-rs/serenity"
